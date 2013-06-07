@@ -1,0 +1,26 @@
+﻿<Window x:Class="EventWithCommandAggergator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:viewModel="clr-namespace:EventWithCommandAggergator.ViewModels"
+        xmlns:converters="clr-namespace:EventWithCommandAggergator.Converters"
+        xmlns:commandToEventAggregator="clr-namespace:CommandToEventAggregator;assembly=CommandToEventAggregator"
+
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <viewModel:MainPageViewModel x:Name="viewModel"></viewModel:MainPageViewModel>
+    </Window.DataContext>
+    <Window.Resources>
+        <converters:EventCommandToEventCommandWrapperConverter x:Key="RoutedEventToCommandConverter"></converters:EventCommandToEventCommandWrapperConverter>
+    </Window.Resources>
+    <StackPanel>
+        <Label Content="Enter mouse to fire aggregated command."></Label>
+        <TextBox TextWrapping="Wrap" Height="200" Width="200" HorizontalAlignment="Left" BorderBrush="Red" BorderThickness="5" VerticalScrollBarVisibility="Auto">
+            <commandToEventAggregator:CommandToEventAggergator.CommandToEventProperty>
+                <MultiBinding Converter="{StaticResource RoutedEventToCommandConverter}">
+                    <Binding Source="{x:Static UIElement.MouseEnterEvent}"></Binding>
+                    <Binding Path="MouseEnterCommand"></Binding>
+                </MultiBinding>
+            </commandToEventAggregator:CommandToEventAggergator.CommandToEventProperty>
+        </TextBox>
+    </StackPanel>
+</Window>
