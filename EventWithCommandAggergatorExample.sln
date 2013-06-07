@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandToEventAggregator", "CommandToEventAggregator\CommandToEventAggregator.csproj", "{D8BB3A71-0512-4BEB-890D-017229EC3C59}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventWithCommandAggergatorExample", "CommandToEventAggregatorExample\EventWithCommandAggergatorExample.csproj", "{1AF5B659-843B-455B-9150-B6D1E83EB482}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventWithCommandAggergatorExample", "EventWithCommandAggergator\EventWithCommandAggergatorExample.csproj", "{1AF5B659-843B-455B-9150-B6D1E83EB482}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandToEventAggregator", "CommandToEventAggregator\CommandToEventAggregator.csproj", "{D8BB3A71-0512-4BEB-890D-017229EC3C59}"
+>>>>>>> 808849f1485158b0ae428b8083a512c95d932b6c
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +17,24 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{D8BB3A71-0512-4BEB-890D-017229EC3C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D8BB3A71-0512-4BEB-890D-017229EC3C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8BB3A71-0512-4BEB-890D-017229EC3C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8BB3A71-0512-4BEB-890D-017229EC3C59}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> 808849f1485158b0ae428b8083a512c95d932b6c
 		{1AF5B659-843B-455B-9150-B6D1E83EB482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1AF5B659-843B-455B-9150-B6D1E83EB482}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AF5B659-843B-455B-9150-B6D1E83EB482}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AF5B659-843B-455B-9150-B6D1E83EB482}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+=======
+		{D8BB3A71-0512-4BEB-890D-017229EC3C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8BB3A71-0512-4BEB-890D-017229EC3C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8BB3A71-0512-4BEB-890D-017229EC3C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8BB3A71-0512-4BEB-890D-017229EC3C59}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 808849f1485158b0ae428b8083a512c95d932b6c
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
